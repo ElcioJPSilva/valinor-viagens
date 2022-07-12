@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="icon" href="favicon.png" type="image/x-icon/">
+  <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+  <title>Valinor Viagens</title>
+</head>
+
+<body class="imagem-fundo">
+
+  <header>
+
+    <nav class="menu-principal">
+      <div><a href="index1.html"><img src="imagens/Logo-oficial.png" class="logo" alt="Logo do site"></a></div>
+      <div>
+        <a href="index1.html"><button>Home</button></a>
+        <a href="destino.html"><button>Destino</button></a>
+        <a href="promocoes.html"><button>Promoções</button></a>
+        <a href="contato.html"><button>Contato</button></a>
+      </div>
+      <div><input type="search" class="pesquisa1" placeholder="Buscar no site">
+        <button class="pesquisa">Pesquisar</button>
+      </div>
+    </nav>
+
+  </header>
+
+  <section>
+    <div class="formulario-passagem">
+    <div class="radio1">
+        <h4 style="color: green">Passagens Aéreas</h4>
+        <label for="radio-idaevolta"><input type="radio" class="radio" name="destino" id="radio-idaevolta">Ida e Volta</label>
+        
+        <label for="radio-soida"><input type="radio" class="radio" name="destino" id="radio-soida">Só ida</label>
+                        
+        <label for="radio-multidestino"><input type="radio" class="radio" name="destino" id="radio-multidestino" checked>Multidestino</label>
+    </div>
+
+    <div>
+      <!-- <label for="origem">Origem</label> -->
+      <input type="text" placeholder="Origem" id="origem" class="origem">
+      <!-- <label for="destino">Destino</label> -->
+      <input type="text" placeholder="Destino" id="destino" class="destino">
+    </div>
+
+    <div>
+      <label for="dataida">Data da Ida</label>
+      <input type="date" id="dataida">
+      <label for="datavolta">Data da Volta</label>
+      <input type="date" id="datavolta">
+    </div>
+    <div>
+      <label for="passageiros">Passageiros</label>
+      <input type="number" id="passageiros">
+    </div>
+    <div>
+      <button class="botao">Pesquisar</button>
+    </div>
+    
+    </div>        
+</section>
+
+<div class="container">
+  <div class="carrosel">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="promocoes.html"><img src="imagens/redimensionadas/recortadas/condado1.jpg" class="d-block w-100" alt="Condado"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <a href="promocoes.html"><h5 style="color: white;">O Condado</h5></a>
+            <a href="promocoes.html"><p style="color: white;">Lar dos Hobbits.</p></a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="promocoes.html"><img src="imagens/redimensionadas/recortadas/edoras.jpg" class="d-block w-100" alt="Edoras-rohan"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <a href="promocoes.html"><h5 style="color: white;">Édoras-Rohan</h5></a>
+            <a href="promocoes.html"><p style="color: white;">A terra dos cavaleiros.</p></a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="promocoes.html"><img src="imagens/Dale.jpg" class="d-block w-100" alt="Vale"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <a href="promocoes.html"><h5 style="color: white;">Esgaroth</h5></a>
+            <a href="promocoes.html"><p style="color: white;">A cidade do lago.</p></a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+
+  <section class="cards">
+    <article class="card card--1">
+      <div class="card__info--hover"></div>
+      <div class="card__img"></div>
+      <a href="destino.html" class="card_link">
+        <div class="card__img--hover"></div>
+      </a>
+      <div class="card__info">
+        <a href="destino.html"><span class="card__category">Pacote para Argonath</span>
+        </a>
+        <a href="destino.html">
+          <h3 class="card__title">Reserve agora </h3>
+        </a>
+      </div>
+    </article>
+
+    <article class="card card--2">
+      <div class="card__info--hover"></div>
+      <div class="card__img"></div>
+      <a href="destino.html" class="card_link">
+        <div class="card__img--hover"></div>
+      </a>
+      <div class="card__info">
+        <a href="destino.html"><span class="card__category">Pacote para Valfenda</span>
+        </a>
+        <a href="destino.html">
+          <h3 class="card__title">Reserve agora</h3>
+        </a>
+      </div>
+    </article>
+
+    <article class="card card--3">
+      <div class="card__info--hover"></div>
+      <div class="card__img"></div>
+      <a href="destino.html" class="card_link">
+        <div class="card__img--hover"></div>
+      </a>
+      <div class="card__info">
+        <a href="destino.html"><span class="card__category">Pacote para Erebor</span>
+        </a>
+        <a href="destino.html">
+          <h3 class="card__title">Reserve agora</h3>
+        </a>
+      </div>
+    </article>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Conecte-se conosco nas redes sociais:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Valinor Viagens
+            </h6>
+            <p>
+              O Único site de viagens que possibilita a todos os amantes da obra de J.R.R. Tolkien e qualquer outra
+              pessoa
+              viajar por esse mundo fantástico da Terra Média!
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Páginas e produtos
+            </h6>
+            <p>
+              <a href="index1.html" class="text-reset">Home</a>
+            </p>
+            <p>
+              <a href="destino.html" class="text-reset">Destino</a>
+            </p>
+            <p>
+              <a href="promocoes.html" class="text-reset">Promoções</a>
+            </p>
+            <p>
+              <a href="contato.html" class="text-reset">Contato</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Links Úteis
+            </h6>
+            <p>
+              <a href="https://www.valinor.com.br/" class="text-reset">Valinor</a>
+            </p>
+            <p>
+              <a href="https://www.jrrtolkien.com.br/" class="text-reset">Sociedade de Tolkien brasileira</a>
+            </p>
+            <p>
+              <a href="https://terramedia.fandom.com/wiki/P%C3%A1gina_principal" class="text-reset">Fandom</a>
+            </p>
+            <p>
+              <a href="#!"
+                class="https://www.primevideo.com/detail/amzn1.dv.gti.f856462e-f3f0-47d6-99a7-8e7900ffb935?ref_=dvm_crs_prm_br_mc_s_d_pmpbanner_uap">Os
+                Anéis de poder</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Contato
+            </h6>
+            <p><i class="fas fa-home me-3"></i> Condado dos Hobbits, Quarta Oeste 60, TM</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              valinorviagens@terramedia.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 99 132 567 33</p>
+            <p><i class="fas fa-print me-3"></i> + 99 234 098 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Valinor Viagens</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
