@@ -1,0 +1,505 @@
+* {
+    font-family: 'Prata', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor
+}
+
+.imagem-fundo {
+    background-image: url(imagens/minas-tirith.jpg), linear-gradient(rgba(112, 173, 112, 0.7), rgb(208, 216, 208));
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiasied;
+}
+
+.imagem-fundo2 {
+    background-image: linear-gradient(rgba(112, 173, 112, 0.7), rgb(208, 216, 208));
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiasied;
+    color: black;
+}
+
+.imagem-fundo3 {
+    background: linear-gradient(rgba(112, 173, 112, 0.7), rgb(208, 216, 208));
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiasied;
+    color: black;
+}
+
+.imagem-fundo4 {
+    background: linear-gradient(rgba(112, 173, 112, 0.7), rgb(208, 216, 208));
+}
+
+.logo {
+    display: flex;
+    max-width: fit-content;
+    align-content: center;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+}
+
+.menu-principal {
+    text-align: center;
+    align-items: center;
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-principal button, .botao {
+    padding: 8px;
+    margin: 10px;
+    text-decoration: none;
+    flex-wrap: wrap;
+    font-size: 15px;
+    border: double;
+    background-color: rgba(6, 114, 6, 0.6);
+    color: rgb(255, 255, 255, 0.6);
+    align-items: center;
+    border-radius: 5px;
+}
+
+.menu-principal button:hover, .botao:hover {
+    background-color: green;
+    transition: 1s;
+}
+
+.pesquisa {
+    border: double;
+    background-color: rgba(6, 114, 6, 0.7);
+    color: rgb(255, 255, 255, 0.6);
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.pesquisa:hover {
+    background-color: green;
+}
+
+.pesquisa1 {
+    font-size: 17px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.caixa {
+    display: flex;
+    margin: auto;
+    background-color: rgb(255, 255, 255, 0.5);
+    border-radius: 8px;
+    height: 500px;
+    width: 500px;
+}
+
+.caixa-contato {
+
+    font-size: 100%;
+    background-color: rgba(74, 128, 59, 0.5);
+    border-radius: 8px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+main {
+    margin-bottom: 100px;
+}
+
+.divBusca {
+    background-color: #E0EEEE;
+    border: solid 2px #5F9EA0;
+    border-radius: 10px;
+    width: 300px;
+    height: 32px;
+}
+
+.txtBusca {
+    background-color: aliceblue;
+    padding-left: 5px;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: 191px;
+    border-radius: 7px 0 0 7px;
+}
+
+.btnBusca {
+    border: none;
+    border-radius: 0 7px 7px 0;
+    height: 32px;
+    width: 70px;
+    font-weight: bold;
+    background: #5F9EA0;
+}
+
+#radio-input {
+    margin: 10px;
+}
+
+#dataida,
+#datavolta {
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid #5F9EA0;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 50px;
+    color: #5F9EA0;
+    font-weight: bold;
+    }
+
+form [type="submit"] {
+    /* type para dar um id ao botão */
+    background-color: #5F9EA0;
+    color: white;
+}
+
+form [type="submit"]:hover {
+    cursor: pointer;
+}
+
+.formulario-passagem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    background-image: linear-gradient(rgba(112, 173, 112, 0.7), rgb(208, 216, 208));
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 14px;
+    
+    padding: 10px;
+}
+
+.formulario-passagem label {
+    margin-left: 3px;
+    font-weight: bold;
+    color: black;
+}
+
+.formulario-passagem input {
+    margin-right: 2px;
+    border-radius: 7px;
+    border: none;
+    padding: 3px;
+
+}
+
+.carrosel {
+    margin-bottom: 40px;
+}
+
+.img-pacote:hover {
+    cursor: pointer;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 820px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+       }
+
+.card--1 .card__img,
+.card--1 .card__img--hover {
+    background-image: url(imagens/argonath.jpg)
+}
+
+.card--2 .card__img,
+.card--2 .card__img--hover {
+    background-image: url(imagens/valfenda.jpg);
+    size: 5px;
+}
+
+.card--3 .card__img,
+.card--3 .card__img--hover {
+    background-image: url(imagens/erebor.jpg);
+}
+
+.card__img {
+    visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card__info-hover {
+    position: absolute;
+    padding: 16px;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+}
+
+.card__img--hover {
+    transition: 0.2s all ease-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    height: 235px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    top: 0;
+}
+
+.card {
+    margin-right: 25px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+    background-color: #fff;
+    width: 33.3%;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 13px -7px rgba (0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
+.card__info {
+    z-index: 2;
+    background-color: #fff;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #868686;
+}
+
+.card__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: serif;
+}
+
+.card__author {
+    font-weight: 600;
+    text-decoration: none;
+    color: #ad7d52;
+}
+
+.card:hover .card__img--hover {
+    height: 100%;
+    opacity: 1;
+}
+
+.card:hover .card__info {
+    background-color: transparent;
+    position: relative;
+    color: white;
+}
+
+.card:hover .card__info-hover {
+    opacity: 1;
+}
+
+.cards1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.cards1 h1 {
+    margin-bottom: 20px;
+    }
+
+.card0 {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: minmax(100%, 1fr);
+    grid-template-areas: "stack";
+    margin: 5px;
+    overflow: hidden;
+}
+
+.card0 > img,
+.card0 > figcaption {
+    grid-area: stack;
+}
+
+.card0 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card0 > figcaption {
+    grid-area: stack;
+    background-color: #242424e0;
+    transform: translateY(calc(100% - 4rem));
+    transition: transform 600ms;
+}
+
+.card0 > figcaption > h3 {
+    height: 4rem;
+}
+
+.card0:hover figcaption {
+    cursor:pointer;
+    transform: none;
+}
+
+.card2 {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: minmax(100%, 1fr);
+    grid-template-areas: "stack";
+    margin: 5px;
+
+    overflow: hidden;
+}
+
+.card2 > img,
+.card2 > figcaption {
+    grid-area: stack;
+}
+
+.card2 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card2 > figcaption {
+    grid-area: stack;
+    background-color: #242424e0;
+    transform: translateY(calc(100% - 4rem));
+    transition: transform 600ms;
+}
+
+.card2 > figcaption > h3 {
+    height: 4rem;
+}
+
+.card2:hover figcaption {
+    transform: none;
+    cursor:pointer;
+}
+
+.card3 {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: minmax(100%, 1fr);
+    grid-template-areas: "stack";
+    margin: 5px;
+
+    overflow: hidden;
+}
+
+.card3 > img,
+.card3 > figcaption {
+    grid-area: stack;
+}
+
+.card3 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card3 > figcaption {
+    grid-area: stack;
+    background-color: #242424e0;
+    transform: translateY(calc(100% - 4rem));
+    transition: transform 600ms;
+}
+
+.card3 > figcaption > h3 {
+    height: 4rem;
+}
+
+.card3:hover figcaption {
+    transform: none;
+    cursor:pointer;
+}
+
+.card4 {
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-rows: minmax(100%, 1fr);
+    grid-template-areas: "stack";
+    margin: 5px;
+
+    overflow: hidden;
+}
+
+.card4 > img,
+.card4 > figcaption {
+    grid-area: stack;
+}
+
+.card4 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card4 > figcaption {
+    grid-area: stack;
+    background-color: #242424e0;
+    transform: translateY(calc(100% - 4rem));
+    transition: transform 600ms;
+}
+
+.card4 > figcaption > h3 {
+    height: 4rem;
+}
+
+.card4:hover figcaption {
+    transform: none;
+    cursor:pointer;
+}
+
+.titulo {   
+    text-align: center;
+    color: black;
+    background-image: linear-gradient(rgba(112, 173, 112, 0.7), rgb(208, 216, 208));
+    
+    
+    
+}
+      
